@@ -1,3 +1,5 @@
+using WebApplication1.Services;
+
 namespace WebApplication1;
 
 public class Program
@@ -10,7 +12,7 @@ public class Program
 
         builder.Services.AddControllers();
         
-        // builder.Services.AddScoped<ITripsService, TripsService>();
+        builder.Services.AddScoped<IBookingsService, BookingsService>();
         
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
