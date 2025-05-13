@@ -15,7 +15,7 @@ public class BookingsService : IBookingsService
     {
         int counter = 0;
         var ids = new List<int>();
-        BookingsDTO booking = new BookingsDTO();
+        BookingsDTO booking = null;
        var bookings = new List<BookingsDTO>();
        Boolean isSame = false;
         string query =
